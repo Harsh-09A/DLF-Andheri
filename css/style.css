@@ -457,3 +457,36 @@ figure.snip1113 h4 {
   opacity: 0.6;
   font-size: 1.1em;
 }
+
+/* Location */
+
+.nav-link.ami-tab {
+  background-color: transparent;
+  color: var(--colorPrimary);
+  border: 2px solid var(--colorPrimary);
+  border-radius: 0;
+}
+.nav-link.ami-tab.active {
+  color: var(--colorWhite);
+  background-color: var(--colorPrimary);
+}
+.location_features_section .nav-item {
+  border: none;
+}
+
+.info-location {
+  font-size: 2rem !important;
+  padding: 0;
+  margin: 0;
+}
+
+.location-features i {
+  color: var(--colorPrimary);
+}
+.location-features .row .col {
+  font-size: 1.9rem !important;
+}
+
+.locfec {
+  text-transform: capitalize;
+}
