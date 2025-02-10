@@ -42,3 +42,7 @@ function toggleContent(dotsId, moreTextId, btnId) {
     animStart();
   };
 })();
+
+$(function () {
+  $("#date_modal_2").datepicker();
+});

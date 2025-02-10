@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/") format("truetype");
-} */
+@font-face {
+  font-family: Trajan_Pro_Bold;
+  src: url("../fonts/Trajan_Pro_Bold.ttf");
+}
+@font-face {
+  font-family: varsity_regular;
+  src: url("../fonts/varsity_regular.ttf");
+}
 
 :root,
 html {
@@ -82,7 +86,7 @@ main {
 /* Slider */
 .carousel {
   overflow: hidden !important;
-  max-height: calc(100vh - 70px);
+  max-height: calc(100vh - 50px);
 }
 
 .carousel-indicators .active {
@@ -382,6 +386,11 @@ background-blend-mode: multiply; */
 @media (min-width: 800px) {
   #gallery {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
   }
 }
 

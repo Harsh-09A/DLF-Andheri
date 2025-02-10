@@ -39,6 +39,7 @@ const handleFormSubmit = async (
     company_name: "DLF Andheri",
   };
 
+  console.log(dateField, templateParams.date);
   // Send Form
   emailjs.send("contact_service", "contact_form", templateParams).then(
     function (response) {
@@ -93,7 +94,7 @@ window.onload = function () {
         "user_email_modal_2",
         "contact_number_modal_2",
         "privacy_check_modal_2",
-        "date_modal"
+        "date_modal_2"
       );
     });
 };
