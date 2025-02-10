@@ -24,17 +24,19 @@ const handleFormSubmit = async (
   nameField,
   emailField,
   phoneField,
-  privacyField
+  privacyField,
+  dateField
 ) => {
   const templateParams = {
     user_name: document.getElementById(nameField).value,
     user_email: document.getElementById(emailField).value,
     contact_number: document.getElementById(phoneField).value,
     privacy_check: document.getElementById(privacyField).value,
+    date: document?.getElementById(dateField)?.value,
     ip_address: await getIpAddress(),
     website_url: window.location.href,
     to_email: "harsh.autowebbed@gmail.com",
-    company_name: "{Project Name}",
+    company_name: "DLF Andheri",
   };
 
   // Send Form
@@ -78,6 +80,20 @@ window.onload = function () {
         "user_email_modal",
         "contact_number_modal",
         "privacy_check_modal"
+      );
+    });
+
+  document
+    .getElementById("contact-form-modal-2")
+    ?.addEventListener("submit", function (event) {
+      event.preventDefault();
+      handleFormSubmit(
+        "contact-form-modal-2",
+        "user_name_modal_2",
+        "user_email_modal_2",
+        "contact_number_modal_2",
+        "privacy_check_modal_2",
+        "date_modal"
       );
     });
 };
