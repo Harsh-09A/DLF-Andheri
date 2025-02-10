@@ -385,6 +385,37 @@ background-blend-mode: multiply; */
   }
 }
 
+/* Configuration */
+
+.config-inner {
+  text-align: center;
+  font-weight: normal;
+  padding: 10px;
+  margin-top: 20px;
+
+  -webkit-box-shadow: 0px 0px 10px 0px var(--colorWhiteOverlay);
+  -moz-box-shadow: 0px 0px 10px 0px var(--colorWhiteOverlay);
+  box-shadow: 0px 0px 10px 0px var(--colorWhiteOverlay);
+  border-radius: 30px 0px 30px 0px;
+}
+.config-price {
+  background: var(--colorSecondary);
+  width: 75%;
+  margin: 15px auto;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 15px 0px;
+}
+
+.config-price a {
+  text-decoration: none;
+  color: var(--colorWhite);
+}
+.plans_img {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
 /* amenities */
 .amenities_section {
   display: flex;
@@ -489,4 +520,135 @@ figure.snip1113 h4 {
 
 .locfec {
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  .location_features_section .nav-item {
+    width: 100%;
+  }
+}
+
+/* About */
+#about_section {
+  background-color: #00354a;
+  /* background: url(../img/backgrounds/ftbg.jpg); */
+  background-repeat: repeat;
+  /* background-size: cover; */
+  /* height: 970px; */
+  background-attachment: fixed;
+  padding: 0 !important;
+}
+
+#about_section .sub-heading {
+  color: var(--colorPrimary);
+  font-size: 1.5em;
+}
+
+#about_section .sub-heading {
+  letter-spacing: 3.5px;
+}
+
+.read_more {
+  background-color: transparent;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 0;
+  width: fit-content;
+  padding-left: 10px;
+  color: var(--colorWhite);
+}
+img.img-fluid.p-2.scale-up-center {
+  height: 50px !important;
+}
+
+.form-label {
+  display: none;
+}
+.inputStyle {
+  font-size: 1em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.submit-btn,
+.submit-btn:hover,
+.submit-btn:focus-visible,
+.submit-btn:active {
+  background-color: var(--colorSecondary) !important;
+  border: none !important;
+}
+
+/*  */
+
+.AnimatePrice {
+  display: inline-block;
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  /* background: rgba(167, 134, 85, 0.2); */
+  background: rgba(57, 63, 65, 0.452);
+  transition: 1s linear;
+}
+.AnimatePrice::before {
+  animation-name: rotate;
+  animation-duration: 3s;
+  transform: scale(10);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.AnimatePrice::before {
+  position: absolute;
+  content: "";
+  background: conic-gradient(
+    from 40deg at 50% 50%,
+    rgba(255, 255, 255, 0) 43%,
+    var(--colorPrimary) 100%
+  );
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  rotate: 0deg;
+}
+.enquireNowBtn {
+  padding: 6px 30px;
+  display: inline-block;
+  color: var(--colorPrimary);
+}
+.AnimatePrice .enquireNowBtn {
+  position: relative;
+  color: var(--colorPrimary);
+  background: #fff;
+}
+
+.enquireNowBtn {
+  background: var(--colorPrimary);
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px 13px;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.whatsapp-img {
+  width: 27px;
+  margin-right: 8px;
+}
+
+.or {
+  margin: 10px 0px;
+  text-align: center;
 }
